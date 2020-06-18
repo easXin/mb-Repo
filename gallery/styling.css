@@ -1,0 +1,29 @@
+/*make sure that the dimensions of any box includes its border and padding, this gives us an easy way of sizing our elements*/
+* {
+    box-sizing: border-box;
+}
+/*Convert the container to a flexbox*/
+.container{
+    display:flex;
+    flex-wrap:wrap;
+}
+/* .column:nth-child(1){
+    background-color: skyblue;
+}
+.column:nth-child(2){
+    background-color: palevioletred;
+}
+.column:nth-child(3){
+    background-color: greenyellow;
+}
+.column:nth-child(4){
+    background-color: orange; 
+}*/
+.column{
+    /* Let all the column to have same width */
+    flex:1; /* flex grow sets to one , evenly distributed the container between the items*/
+    min-width: 300px;
+}
+img{
+    width: 100%;
+}
